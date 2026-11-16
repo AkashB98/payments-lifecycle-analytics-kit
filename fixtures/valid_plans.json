@@ -1,0 +1,1 @@
+[{"failure_code":"R01","failure_reason":"insufficient_funds","payment_id":"fix_ok1","planned_retries":2,"rail":"ACH"},{"failure_code":null,"failure_reason":"network_timeout","payment_id":"fix_ok2","planned_retries":2,"rail":"card"}]
