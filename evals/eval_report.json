@@ -1,0 +1,55 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "detail": "seed42 n=100 identical across calls",
+      "name": "generator_determinism",
+      "passed": true
+    },
+    {
+      "detail": "period1 and period2 ids disjoint",
+      "name": "period_separation",
+      "passed": true
+    },
+    {
+      "detail": "derived=0.587869 naive=0.26512 delta=0.322749",
+      "name": "policy_vs_naive_golden",
+      "passed": true
+    },
+    {
+      "detail": "ACH eventual=0.881356 card eventual=0.911917 RTP eventual=0.957746",
+      "name": "rail_table_golden",
+      "passed": true
+    },
+    {
+      "detail": "insufficient_funds|24-72h=0.653846 network_timeout|0-1h=0.769231",
+      "name": "recovery_cells_golden",
+      "passed": true
+    },
+    {
+      "detail": "total_cost=318.45 total_attempts=1213 cost_per_settled=0.3523",
+      "name": "retry_costs_golden",
+      "passed": true
+    },
+    {
+      "detail": "flagged=['fix_v1', 'fix_v2', 'fix_v3']",
+      "name": "rule_check_planted_exact",
+      "passed": true
+    },
+    {
+      "detail": "initiated->settled raises IllegalTransitionError",
+      "name": "state_machine_illegal_rejected",
+      "passed": true
+    }
+  ],
+  "eval_count": 8,
+  "failed": 0,
+  "headline": {
+    "ach_eventual_recovery_rate": 0.881356,
+    "delta_recovery_rate": 0.322749,
+    "derived_recovery_rate": 0.587869,
+    "naive_recovery_rate": 0.26512,
+    "total_cost_illustrative_n1000": 318.45
+  },
+  "passed": 8
+}
